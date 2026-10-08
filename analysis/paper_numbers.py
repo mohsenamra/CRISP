@@ -1,5 +1,6 @@
 # Derived numbers reported in the paper that are not in the summary files. Uses exactly the splits of bench_analyze.py.
-import json, glob, pickle, numpy as np, sys
+import json, glob, pickle, numpy as np, sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "benchmarks"))
 sys.argv = ["x", "--first"]
 import bench_analyze as ba
 from bench_work import LAMS

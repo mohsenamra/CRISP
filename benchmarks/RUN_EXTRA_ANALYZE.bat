@@ -9,10 +9,10 @@ echo Analysing the supplementary experiments (no new solves, about 5-10 minutes)
 %PY% extra_analyze.py >> %LOG% 2>&1
 if errorlevel 1 goto fail
 echo [%date% %time%] ALL DONE >> %LOG%
-echo ALL DONE. Tell Claude the analysis has finished.
+echo ALL DONE. The analysis has finished.
 pause
 exit /b
 :fail
 echo [%date% %time%] FAILED >> %LOG%
-echo An error occurred. Tell Claude: details are in results\run_status_extra_analyze.txt
+echo An error occurred. Details are in results\run_status_extra_analyze.txt
 pause

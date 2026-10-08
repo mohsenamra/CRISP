@@ -29,7 +29,7 @@ for prob in ["setcover", "cauction", "facility", "indset"]:
                 res[f"empirical_{lossname}|n{n}|a{a}"] = summarize(rows_e, a)
                 res[f"CRISP_{'CRC' if lc=='LM' else 'LTT'}_{lossname}|n{n}|a{a}"] = summarize(rows_c, a)
     out[prob] = res
-json.dump(out, open("summary_baselines.json", "w"), indent=1)
+json.dump(out, open(os.path.join("results", "summary_baselines.json"), "w"), indent=1)
 for p, r in out.items():
     print("==", p)
     for k, v in r.items():

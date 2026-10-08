@@ -13,10 +13,10 @@ echo Progress: results\progress_ssoa.txt
 %PY% app_run.py 2>> %LOG%
 if errorlevel 1 goto fail
 echo [%date% %time%] ALL DONE >> %LOG%
-echo ALL DONE. Tell Claude the run has finished.
+echo ALL DONE. The run has finished.
 pause
 exit /b
 :fail
 echo [%date% %time%] FAILED >> %LOG%
-echo An error occurred. Tell Claude: details are in results\run_status_ssoa.txt
+echo An error occurred. Details are in results\run_status_ssoa.txt
 pause

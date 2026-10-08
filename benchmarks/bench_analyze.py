@@ -77,6 +77,6 @@ if __name__ == "__main__":
     pr = {p: pickle.load(open(os.path.join("preds", p, "preds.pkl"), "rb")) for p in allr}
     for p in allr: allr[p]["predictor"] = dict(used=pr[p]["use"], validation_scores=pr[p]["scores"])
     json.dump(allr, open(os.path.join("results", "summary_bench_%s.json" % SELECT), "w"), indent=1)
-    import zipfile                                   # pack raw evaluation records so Claude can re-analyse without new solves
+    import zipfile                                   # pack raw evaluation records so that results can be re-analysed without new solves
     with zipfile.ZipFile(os.path.join("results", "eval_records.zip"), "w", zipfile.ZIP_DEFLATED) as z:
         for f in glob.glob(os.path.join("eval", "*", "*.pkl")) + glob.glob(os.path.join("preds", "*", "preds.pkl")): z.write(f); print("analysis done -> results/summary_bench.json")

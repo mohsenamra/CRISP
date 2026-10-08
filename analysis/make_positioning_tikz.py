@@ -1,6 +1,7 @@
 """Write the positioning map (Figure 1) as TikZ, so that it uses the fonts of the manuscript."""
-import re
-src = open("make_fig_positioning.py").read()
+import re, os
+os.makedirs("figures", exist_ok=True)
+src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "make_fig_positioning.py")).read()
 W = eval(src[src.index("W = ["):src.index("]\n", src.index("W = ["))+1].split("=", 1)[1])
 COL = {"ML for MILP": "blue!70!black", "OR reduction": "orange!85!black", "Unit commitment": "green!50!black",
        "Conformal / distribution-free": "violet!80!black"}

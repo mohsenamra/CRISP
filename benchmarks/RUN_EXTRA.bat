@@ -27,12 +27,12 @@ echo [%date% %time%] analysis >> %LOG%
 if errorlevel 1 goto fail
 echo [%date% %time%] ALL DONE >> %LOG%
 echo.
-echo ALL DONE. Tell Claude the run has finished.
+echo ALL DONE. The run has finished.
 pause
 exit /b
 :fail
 echo [%date% %time%] FAILED exit code %errorlevel% >> %LOG%
-echo An error occurred. Tell Claude: the details are in results\run_status_extra.txt
+echo An error occurred. Details are in results\run_status_extra.txt
 pause
 exit /b
 :nopy

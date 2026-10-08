@@ -1,8 +1,10 @@
-numpy>=2.0
-scipy>=1.11
-pandas>=2.0
-scikit-learn>=1.4
-highspy>=1.7
-torch>=2.2
-matplotlib>=3.8
-PySCIPOpt>=5.0  # only for the SCIP experiment
+# Versions used for the experiments reported in the paper (later versions are expected to work, but the
+# pickled predictors in benchmarks/models should be loaded with the same major versions of scikit-learn and torch).
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+scikit-learn==1.9.1
+highspy==1.15.1
+torch==2.14.1
+matplotlib==3.11.2
+PySCIPOpt==6.2.1  # only for the SCIP experiment

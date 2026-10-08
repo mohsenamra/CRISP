@@ -2,6 +2,8 @@
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import os
+os.makedirs("figures", exist_ok=True)
 from matplotlib.patches import FancyBboxPatch, Rectangle
 
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 7.6})
