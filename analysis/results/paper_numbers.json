@@ -1,0 +1,175 @@
+{
+ "setcover": {
+  "tuned_vs_crisp|CRC_meangap|a0.01": {
+   "tuned": {
+    "risk": 0.008005114365959598,
+    "above": 0.4845,
+    "speedup": 17.385966930820913
+   },
+   "crisp": {
+    "risk": 0.005952526891078985,
+    "above": 0.0935,
+    "speedup": 13.01065026445935
+   }
+  },
+  "tuned_vs_crisp|LTT_P(gap>1%)|a0.1": {
+   "tuned": {
+    "risk": 0.09145,
+    "above": 0.3615,
+    "speedup": 7.41196709459182
+   },
+   "crisp": {
+    "risk": 0.019575,
+    "above": 0.0615,
+    "speedup": 3.991870714596923
+   }
+  },
+  "fallback_rate_at_selected": 0.029058333333333332,
+  "share_gap_above_B_at_selected": 0.0,
+  "mean_gap_effect_of_truncation": 0.0,
+  "calibration_cost_full_solve_equiv": 2.866929710980899,
+  "calibration_cost_incl_fallback": 5.385679710980898
+ },
+ "cauction": {
+  "tuned_vs_crisp|CRC_meangap|a0.01": {
+   "tuned": {
+    "risk": 0.005652209085716066,
+    "above": 0.009,
+    "speedup": 10.462635526490985
+   },
+   "crisp": {
+    "risk": 0.005577258452694698,
+    "above": 0.0,
+    "speedup": 10.462635526490985
+   }
+  },
+  "tuned_vs_crisp|LTT_P(gap>1%)|a0.1": {
+   "tuned": {
+    "risk": 0.04294166666666666,
+    "above": 0.0005,
+    "speedup": 5.500371582053351
+   },
+   "crisp": {
+    "risk": 0.04019166666666666,
+    "above": 0.0005,
+    "speedup": 5.138944326467261
+   }
+  },
+  "fallback_rate_at_selected": 0.0,
+  "share_gap_above_B_at_selected": 0.0,
+  "mean_gap_effect_of_truncation": 0.0,
+  "calibration_cost_full_solve_equiv": 1.5139936964053557,
+  "calibration_cost_incl_fallback": 4.613993696405356
+ },
+ "facility": {
+  "tuned_vs_crisp|CRC_meangap|a0.01": {
+   "tuned": {
+    "risk": 0.008831325574735831,
+    "above": 0.2235,
+    "speedup": 16.864522281351675
+   },
+   "crisp": {
+    "risk": 0.007789038663280175,
+    "above": 0.2235,
+    "speedup": 15.657015135582075
+   }
+  },
+  "tuned_vs_crisp|LTT_P(gap>1%)|a0.1": {
+   "tuned": {
+    "risk": 0.08384166666666668,
+    "above": 0.251,
+    "speedup": 5.540696448555522
+   },
+   "crisp": {
+    "risk": 0.03425833333333333,
+    "above": 0.0355,
+    "speedup": 3.078179152583678
+   }
+  },
+  "fallback_rate_at_selected": 0.010494444444444445,
+  "share_gap_above_B_at_selected": 0.0,
+  "mean_gap_effect_of_truncation": 0.0,
+  "calibration_cost_full_solve_equiv": 4.8458617661033285,
+  "calibration_cost_incl_fallback": 5.464611766103329
+ },
+ "indset": {
+  "tuned_vs_crisp|CRC_meangap|a0.01": {
+   "tuned": {
+    "risk": 0.004150589915980249,
+    "above": 0.0,
+    "speedup": 222.12844206926334
+   },
+   "crisp": {
+    "risk": 0.00414971416955782,
+    "above": 0.0,
+    "speedup": 222.12844206926334
+   }
+  },
+  "tuned_vs_crisp|LTT_P(gap>1%)|a0.1": {
+   "tuned": {
+    "risk": 0.04450833333333334,
+    "above": 0.162,
+    "speedup": 221.72130877899252
+   },
+   "crisp": {
+    "risk": 0.024333333333333335,
+    "above": 0.001,
+    "speedup": 221.72130877899252
+   }
+  },
+  "fallback_rate_at_selected": 0.0030333333333333336,
+  "share_gap_above_B_at_selected": 0.0,
+  "mean_gap_effect_of_truncation": 0.0,
+  "calibration_cost_full_solve_equiv": 0.6238751098600565,
+  "calibration_cost_incl_fallback": 1.5801251098600566,
+  "first_vs_fastest_CRC2pct": {
+   "first": 0.997478834711004,
+   "fastest": 222.12844206926334
+  }
+ },
+ "ssoa": {
+  "tuned_vs_crisp|CRC_meangap|a0.01": {
+   "tuned": {
+    "risk": 0.006095006067287557,
+    "above": 0.041,
+    "speedup": 5.391686101029379
+   },
+   "crisp": {
+    "risk": 0.0057634324108059775,
+    "above": 0.0055,
+    "speedup": 5.375607422135078
+   }
+  },
+  "tuned_vs_crisp|LTT_P(gap>1%)|a0.1": {
+   "tuned": {
+    "risk": 0.01980357142857143,
+    "above": 0.032,
+    "speedup": 2.8069644344254776
+   },
+   "crisp": {
+    "risk": 0.012785714285714282,
+    "above": 0.0,
+    "speedup": 2.8009999609963745
+   }
+  },
+  "fallback_rate_at_selected": 0.012812499999999998,
+  "share_gap_above_B_at_selected": 0.0043898809523809515,
+  "mean_gap_effect_of_truncation": 7.085979663618364e-05,
+  "calibration_cost_full_solve_equiv": 2.7208650858872594,
+  "calibration_cost_incl_fallback": 6.458044573066747,
+  "chronological": {
+   "CRC_meangap": {
+    "risk": 0.005206597372186257,
+    "speedup_median": 5.375495602222653,
+    "speedup_total": 4.961765577495142,
+    "lam": 0.95
+   },
+   "LTT_P(gap>1%)": {
+    "risk": 0.019230769230769232,
+    "speedup_median": 2.85768077706303,
+    "speedup_total": 2.7242548038504526,
+    "lam": 0.97
+   }
+  }
+ }
+}

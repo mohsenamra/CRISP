@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+benchmarks/data/
+benchmarks/data_x/
+benchmarks/eval/
+benchmarks/eval_x/
+benchmarks/preds/
+application/data_inst/
+application/data/ssoa/
+application/eval/
+application/preds/
+analysis/eval/
+analysis/figures/
+*.log
