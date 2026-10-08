@@ -25,11 +25,12 @@ Python 3.12; the versions used for the paper are pinned in `requirements.txt`. H
 
 | Paper item | Produced by | File |
 |---|---|---|
-| Table 2 (families), Table 3 (main results), Tables 7–10 (all configurations) | `benchmarks/bench_analyze.py` (`RUN_ANALYZE.bat`) | `benchmarks/results/summary_bench_fastest.json` |
+| Table 2 (families), Table 3 (main results), Tables 8–11 (all configurations) | `benchmarks/bench_analyze.py` (`RUN_ANALYZE.bat`) | `benchmarks/results/summary_bench_fastest.json` |
 | Table 4 (hand-set and tuned thresholds) | `benchmarks/baselines.py` (hand-set rows), `analysis/paper_numbers.py` (tuned vs CRISP rows) | `benchmarks/results/summary_baselines.json`, `analysis/results/paper_numbers.json` |
 | Table 5 (1% relative-gap baseline) | `analysis/gap_baseline/run_gap1pct.py` | `analysis/results/summary_gap1pct.json` |
-| Table 6 (shift, larger instances) and SCIP results | `benchmarks/extra_analyze.py` (`RUN_EXTRA_ANALYZE.bat`) | `benchmarks/results/summary_extra_final.json` |
-| Tables 11–13 (application) | `application/app_run.py` (`RUN_SSOA.bat`), then `analysis/analyse_ssoa.py` | `application/results/summary_ssoa.json`, `analysis/results/summary_ssoa_v2.json` |
+| Table 6 (fixed vs oracle time budget) | `benchmarks/budget_analyze.py` (from the stored records) | `benchmarks/results/summary_budget.json` |
+| Table 7 (shift, larger instances) and SCIP results | `benchmarks/extra_analyze.py` (`RUN_EXTRA_ANALYZE.bat`) | `benchmarks/results/summary_extra_final.json` |
+| Tables 12–14 (application) | `application/app_run.py` (`RUN_SSOA.bat`), then `analysis/analyse_ssoa.py` | `application/results/summary_ssoa.json`, `analysis/results/summary_ssoa_v2.json` |
 | Numbers in the text (fallback rates, calibration cost, truncation, chronological test) | `analysis/paper_numbers.py` | `analysis/results/paper_numbers.json` |
 | Fig. 1 (positioning map) | `analysis/make_fig_positioning.py` (data), `analysis/make_positioning_tikz.py` (TikZ) | `analysis/figures/` |
 | Fig. 2 (framework) | TikZ | `analysis/figures_src/fig_framework_tikz.tex` |
@@ -48,7 +49,7 @@ The `.bat` files were used on Windows; on Linux/macOS run the Python commands in
 
 **Re-analysis from the stored records (no MILP is solved):** the `*_records.zip` archives contain the outcome of every reduced solve.
 
-- Benchmarks: unzip `benchmarks/results/eval_records.zip` and `benchmarks/results/extra_records.zip` inside `benchmarks/` (this creates `eval/`, `eval_x/` and `preds/`), then run `python bench_analyze.py`, `python baselines.py` and `python extra_analyze.py` there.
+- Benchmarks: unzip `benchmarks/results/eval_records.zip` and `benchmarks/results/extra_records.zip` inside `benchmarks/` (this creates `eval/`, `eval_x/` and `preds/`), then run `python bench_analyze.py`, `python bench_analyze.py --first` (first-threshold rule, for comparison), `python baselines.py`, `python budget_analyze.py` and `python extra_analyze.py` there.
 - Derived numbers, application and figures: unzip `benchmarks/results/eval_records.zip` and `application/results/ssoa_records.zip` inside `analysis/` (this creates `analysis/eval/<family>/*.pkl` and `analysis/preds/`), then run, inside `analysis/`:
   - `python paper_numbers.py` → `results/paper_numbers.json`
   - `python analyse_ssoa.py` → `results/summary_ssoa_v2.json`
